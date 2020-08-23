@@ -15,7 +15,6 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
   <body>
     <!-- Header -->
 
@@ -90,7 +89,7 @@
     </header>
 
     <main class="page-main border-top">
-      <!-- Portfolio -->
+      <!-- Filter -->
 
       <section class="section">
         <div class="container">
@@ -113,17 +112,84 @@
             </li>
           </ul>
 
+          <!-- Portfolio -->
+
           <ul class="portfolio-list list">
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_01.jpg"
-                    alt="Ноутбук с сайтом на экране"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-1-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-1-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-1-450.webp 1x,
+                        ./images/mobile/portfolio-1-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-1-450.jpg 1x,
+                        ./images/mobile/portfolio-1-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-1-354.webp 1x,
+                        ./images/tablet/portfolio-1-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-1-354.jpg 1x,
+                        ./images/tablet/portfolio-1-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-1-370.webp 1x,
+                        ./images/desktop/portfolio-1-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-1-370.jpg 1x,
+                        ./images/desktop/portfolio-1-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-1-370.jpg"
+                      alt="Ноутбук с сайтом на экране"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -143,13 +209,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_02.jpg"
-                    alt="Баскетболисты в прыжке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-2-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-2-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-2-450.webp 1x,
+                        ./images/mobile/portfolio-2-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-2-450.jpg 1x,
+                        ./images/mobile/portfolio-2-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-2-354.webp 1x,
+                        ./images/tablet/portfolio-2-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-2-354.jpg 1x,
+                        ./images/tablet/portfolio-2-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-2-370.webp 1x,
+                        ./images/desktop/portfolio-2-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-2-370.jpg 1x,
+                        ./images/desktop/portfolio-2-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-2-370.jpg"
+                      alt="Баскетболисты в прыжке"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -171,13 +302,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_03.jpg"
-                    alt="Логотип ресторана с рыбой"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-3-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-3-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-3-450.webp 1x,
+                        ./images/mobile/portfolio-3-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-3-450.jpg 1x,
+                        ./images/mobile/portfolio-3-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-3-354.webp 1x,
+                        ./images/tablet/portfolio-3-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-3-354.jpg 1x,
+                        ./images/tablet/portfolio-3-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-3-370.webp 1x,
+                        ./images/desktop/portfolio-3-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-3-370.jpg 1x,
+                        ./images/desktop/portfolio-3-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-3-370.jpg"
+                      alt="Логотип ресторана с рыбой"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -197,13 +393,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_04.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-4-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-4-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-4-450.webp 1x,
+                        ./images/mobile/portfolio-4-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-4-450.jpg 1x,
+                        ./images/mobile/portfolio-4-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-4-354.webp 1x,
+                        ./images/tablet/portfolio-4-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-4-354.jpg 1x,
+                        ./images/tablet/portfolio-4-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-4-370.webp 1x,
+                        ./images/desktop/portfolio-4-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-4-370.jpg 1x,
+                        ./images/desktop/portfolio-4-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-4-370.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -223,13 +484,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_05.jpg"
-                    alt="Две коробки разных цветов"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-5-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-5-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-5-450.webp 1x,
+                        ./images/mobile/portfolio-5-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-5-450.jpg 1x,
+                        ./images/mobile/portfolio-5-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-5-354.webp 1x,
+                        ./images/tablet/portfolio-5-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-5-354.jpg 1x,
+                        ./images/tablet/portfolio-5-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-5-370.webp 1x,
+                        ./images/desktop/portfolio-5-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-5-370.jpg 1x,
+                        ./images/desktop/portfolio-5-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-5-370.jpg"
+                      alt="Две коробки разных цветов"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -249,13 +575,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_06.jpg"
-                    alt="Компьютер Apple iMac"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-6-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-6-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-6-450.webp 1x,
+                        ./images/mobile/portfolio-6-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-6-450.jpg 1x,
+                        ./images/mobile/portfolio-6-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-6-354.webp 1x,
+                        ./images/tablet/portfolio-6-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-6-354.jpg 1x,
+                        ./images/tablet/portfolio-6-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-6-370.webp 1x,
+                        ./images/desktop/portfolio-6-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-6-370.jpg 1x,
+                        ./images/desktop/portfolio-6-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-6-370.jpg"
+                      alt="Компьютер Apple iMac"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -275,13 +666,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_07.jpg"
-                    alt="Открытый журнал с картинками"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-7-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-7-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-7-450.webp 1x,
+                        ./images/mobile/portfolio-7-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-7-450.jpg 1x,
+                        ./images/mobile/portfolio-7-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-7-354.webp 1x,
+                        ./images/tablet/portfolio-7-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-7-354.jpg 1x,
+                        ./images/tablet/portfolio-7-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-7-370.webp 1x,
+                        ./images/desktop/portfolio-7-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-7-370.jpg 1x,
+                        ./images/desktop/portfolio-7-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-7-370.jpg"
+                      alt="Открытый журнал с картинками"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -303,13 +759,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_08.jpg"
-                    alt="Этикетка с надписью"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-8-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-8-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-8-450.webp 1x,
+                        ./images/mobile/portfolio-8-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-8-450.jpg 1x,
+                        ./images/mobile/portfolio-8-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-8-354.webp 1x,
+                        ./images/tablet/portfolio-8-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-8-354.jpg 1x,
+                        ./images/tablet/portfolio-8-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-8-370.webp 1x,
+                        ./images/desktop/portfolio-8-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-8-370.jpg 1x,
+                        ./images/desktop/portfolio-8-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-8-370.jpg"
+                      alt="Этикетка с надписью"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения
@@ -329,13 +850,78 @@
             <li class="item">
               <a href="" class="product">
                 <div class="product-thumb">
-                  <img
-                    class="image"
-                    src="./images/portfolio/img-portfolio_09.jpg"
-                    alt="Печатает на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tablet/portfolio-9-354.webp"
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio-9-354.jpg"
+                      media="(max-width: 479px)"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-9-450.webp 1x,
+                        ./images/mobile/portfolio-9-900.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-9-450.jpg 1x,
+                        ./images/mobile/portfolio-9-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- Tablet -->
+
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-9-354.webp 1x,
+                        ./images/tablet/portfolio-9-708.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-9-354.jpg 1x,
+                        ./images/tablet/portfolio-9-708.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <!-- Desktop -->
+
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-9-370.webp 1x,
+                        ./images/desktop/portfolio-9-740.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio-9-370.jpg 1x,
+                        ./images/desktop/portfolio-9-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="image"
+                      src="./images/desktop/portfolio-9-370.jpg"
+                      alt="Печатает на ноутбуке"
+                    />
+                  </picture>
+
                   <div class="product-overlay">
                     <p class="hover-text">
                       Технокряк это современная площадка распространения

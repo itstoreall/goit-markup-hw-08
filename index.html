@@ -165,30 +165,66 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="exemples-list list">
             <li class="item relative">
-              <img
-                src="./images/index/img-exemples_01.jpg"
-                alt="десктоп"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/exemples-1-370.webp 1x,
+                    ./images/desktop/exemples-1-740.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desktop/exemples-1-370.jpg 1x,
+                    ./images/desktop/exemples-1-740.jpg 2x
+                  "
+                  src="./images/desktop/exemples-1-370.jpg"
+                  alt="десктоп"
+                  width="370"
+                />
+              </picture>
               <b class="subtitle">Десктопные приложения</b>
             </li>
             <li class="item relative">
-              <img
-                src="./images/index/img-exemples_02.jpg"
-                alt="мобильный"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/exemples-2-370.webp 1x,
+                    ./images/desktop/exemples-2-740.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desktop/exemples-2-370.jpg 1x,
+                    ./images/desktop/exemples-2-740.jpg 2x
+                  "
+                  src="./images/desktop/exemples-2-370.jpg"
+                  alt="мобильный"
+                  width="370"
+                />
+              </picture>
               <b class="subtitle">Мобильные приложения</b>
             </li>
             <li class="item relative">
-              <img
-                src="./images/index/img-exemples_03.jpg"
-                alt="компьютер"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/exemples-3-370.webp 1x,
+                    ./images/desktop/exemples-3-740.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desktop/exemples-3-370.jpg 1x,
+                    ./images/desktop/exemples-3-740.jpg 2x
+                  "
+                  src="./images/desktop/exemples-3-370.jpg"
+                  alt="компьютер"
+                  width="370"
+                />
+              </picture>
               <b class="subtitle">Дизайнерские решения</b>
             </li>
           </ul>
@@ -202,13 +238,78 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
-              <img
-                class="photo"
-                src="./images/index/photo-team_product-designer.jpg"
-                alt="продукт дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-1-270.webp"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/desktop/team-1-270.jpg"
+                  media="(max-width: 479px)"
+                />
+
+                <!-- Mobile -->
+
+                <source
+                  srcset="
+                    ./images/mobile/team-1-450.webp 1x,
+                    ./images/mobile/team-1-900.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-1-450.jpg 1x,
+                    ./images/mobile/team-1-900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- Tablet -->
+
+                <source
+                  srcset="
+                    ./images/tablet/team-1-354.webp 1x,
+                    ./images/tablet/team-1-708.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-1-354.jpg 1x,
+                    ./images/tablet/team-1-708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- Desktop -->
+
+                <source
+                  srcset="
+                    ./images/desktop/team-1-270.webp 1x,
+                    ./images/desktop/team-1-540.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team-1-270.jpg 1x,
+                    ./images/desktop/team-1-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="photo"
+                  src="./images/desktop/team-1-270.jpg"
+                  alt="продукт дизайнер"
+                />
+              </picture>
+
               <h3 class="title">Николай Кучеренко</h3>
               <p lang="en" class="text">Product Designer</p>
               <ul class="team-social list">
@@ -243,13 +344,78 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/index/photo-team_frontend-dev.jpg"
-                alt="фронтэнд разработчик"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-2-270.webp"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/desktop/team-2-270.jpg"
+                  media="(max-width: 479px)"
+                />
+
+                <!-- Mobile -->
+
+                <source
+                  srcset="
+                    ./images/mobile/team-2-450.webp 1x,
+                    ./images/mobile/team-2-900.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-2-450.jpg 1x,
+                    ./images/mobile/team-2-900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- Tablet -->
+
+                <source
+                  srcset="
+                    ./images/tablet/team-2-354.webp 1x,
+                    ./images/tablet/team-2-708.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-2-354.jpg 1x,
+                    ./images/tablet/team-2-708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- Desktop -->
+
+                <source
+                  srcset="
+                    ./images/desktop/team-2-270.webp 1x,
+                    ./images/desktop/team-2-540.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team-2-270.jpg 1x,
+                    ./images/desktop/team-2-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="photo"
+                  src="./images/desktop/team-2-270.jpg"
+                  alt="фронтэнд разработчик"
+                />
+              </picture>
+
               <h3 class="title">Ольга Иванова</h3>
               <p lang="en" class="text">Frontend Developer</p>
               <ul class="team-social list">
@@ -284,13 +450,78 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/index/photo-team_marketing.jpg"
-                alt="маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-3-270.webp"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/desktop/team-3-270.jpg"
+                  media="(max-width: 479px)"
+                />
+
+                <!-- Mobile -->
+
+                <source
+                  srcset="
+                    ./images/mobile/team-3-450.webp 1x,
+                    ./images/mobile/team-3-900.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-3-450.jpg 1x,
+                    ./images/mobile/team-3-900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- Tablet -->
+
+                <source
+                  srcset="
+                    ./images/tablet/team-3-354.webp 1x,
+                    ./images/tablet/team-3-708.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-3-354.jpg 1x,
+                    ./images/tablet/team-3-708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- Desktop -->
+
+                <source
+                  srcset="
+                    ./images/desktop/team-3-270.webp 1x,
+                    ./images/desktop/team-3-540.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team-3-270.jpg 1x,
+                    ./images/desktop/team-3-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="photo"
+                  src="./images/desktop/team-3-270.jpg"
+                  alt="маркетолог"
+                />
+              </picture>
+
               <h3 class="title">Андрей Шевченко</h3>
               <p lang="en" class="text">Marketing</p>
               <ul class="team-social list">
@@ -325,13 +556,78 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/index/photo-team_ui-designer.jpg"
-                alt="юи дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-4-270.webp"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/desktop/team-4-270.jpg"
+                  media="(max-width: 479px)"
+                />
+
+                <!-- Mobile -->
+
+                <source
+                  srcset="
+                    ./images/mobile/team-4-450.webp 1x,
+                    ./images/mobile/team-4-900.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-4-450.jpg 1x,
+                    ./images/mobile/team-4-900.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- Tablet -->
+
+                <source
+                  srcset="
+                    ./images/tablet/team-4-354.webp 1x,
+                    ./images/tablet/team-4-708.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-4-354.jpg 1x,
+                    ./images/tablet/team-4-708.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- Desktop -->
+
+                <source
+                  srcset="
+                    ./images/desktop/team-4-270.webp 1x,
+                    ./images/desktop/team-4-540.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team-4-270.jpg 1x,
+                    ./images/desktop/team-4-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="photo"
+                  src="./images/desktop/team-4-270.jpg"
+                  alt="юи дизайнер"
+                />
+              </picture>
+
               <h3 class="title">Иван Николаев</h3>
               <p lang="en" class="text">UI Designer</p>
               <ul class="team-social list">
